@@ -130,7 +130,7 @@ A couple of notes to observe in the output below.
 * The node is designed to talk to the stock "WiFi-Bridge" project binary in the STM32CubeFunctionPack_6LPWIFI_V2.0.0 function pack as Projects/Multi/Applications/WiFi-Bridge/Binary/STM32F401RE-Nucleo/STM32F4xx-Nucleo-WiFi-Bridge-IDS01A5.bin
 * The update won't start until the node is connected to the border router (aka WiFi Bridge), and you can tell it is connected when you see as series of RPL info messages print in the console that indicate a preferred DAG has been joined, i.e. `RPL: preferred DAG aaaa::1151:3433:6834:6d31`.  The address will be unique to your node, however the IPv6 prefix is fixed to "aaaa", which is required to connect to the STM WiFi-Bridge border router.
 
-  ```
+```
 ************************************************************************
  IoT Core OTA Update Demo APP for NUCLEO-L152RE-SPIRIT1
 ************************************************************************
@@ -207,10 +207,10 @@ COMPLETE
 
 --Done--
 Contiki going down NOW!
-  ```
+```
   This update is identical in function to the previous version, except that the version 'minor' digit has been incremented from 0 to 1, and there is an extra message in the banner indicating that the updated app is running.  When the update is complete, the board automatically reboots and you should see the updated application now running out of the STM32L152 internal flash's APP2 section.  
 
-  ```
+```
 ************************************************************************
  IoT Core OTA Update Demo APP for NUCLEO-L152RE-SPIRIT1
  Running the updated APP!
@@ -221,11 +221,11 @@ APP1 version: 1.0.31
 APP2 version: 1.1.31
 Current APP version: 1.1.31
 
-  ```
+```
 
 7. **Rollback the update.** Re-connect the jumper wire between PA0 and 3.3V and reset the board to access the MTA.  The menu will have a new option `5) rollback a firmware update` as shown. Select this option and confirm with `y`. 
 
-  ```
+```
 ************************************************************************
  IoT Core Provisioning MTA for NUCLEO-L152RE-SPIRIT1
 ************************************************************************
@@ -259,8 +259,9 @@ Current APP version: 1.1.31
  5) Rollback a firmware update
 
  > 5 rollback to version 1.0.31 from 1.1.31 y/n?
-  ```
-10. **Interrupt the update.**  Remove the jumper wire again from the 3.3V pin and reset the board to boot the main APP.  Now this time around, you can press the reset button as the update progresses, or power cycle the board.  At this stage, a portion of the image has been written to the APP2 section in internal flash, and a flash write operation may have been ongoing.  When the application boots up again, it remains untouched and it is the same as before - the current version will continue to report 1.0.31.  
+```
+
+8. **Interrupt the update.**  Remove the jumper wire again from the 3.3V pin and reset the board to boot the main APP.  Now this time around, you can press the reset button as the update progresses, or power cycle the board.  At this stage, a portion of the image has been written to the APP2 section in internal flash, and a flash write operation may have been ongoing.  When the application boots up again, it remains untouched and it is the same as before - the current version will continue to report 1.0.31.  
 
 
 ### So how does this work?
