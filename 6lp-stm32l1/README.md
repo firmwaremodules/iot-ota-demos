@@ -1,6 +1,6 @@
 # Secure OTA Firmware Update with STM32L1 over 6LoWPAN and CoAP
 
-  ![](https://github.com/firmwaremodules/iot-ota-demos/raw/master/6lp-stm32l1/resources/ota-6lp-stm32-spirit1-cover2.jpg "NUCLEO-L152RE with X-NUCLEO-IDS01A5")
+  ![](https://github.com/firmwaremodules/iot-ota-demos/raw/master/6lp-stm32l1/resources/ota-6lp-stm32-spirit1-cover2.png "NUCLEO-L152RE with X-NUCLEO-IDS01A5")
 
 ## About this project
 Demonstrate a secure and robust over-the-air and end-to-end firmware update from a CoAP server over 6LoWPAN with the STM32L152RE Cortex-M3 MCU and the SPSGRF915 Spirit1 Sub-GHz RF module.
